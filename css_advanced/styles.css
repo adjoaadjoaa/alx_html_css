@@ -416,3 +416,104 @@ body {
     font-size: 2rem;
   }
 }
+
+/* Free Membership Section */
+.membership-section {
+  padding: 80px 20px;
+  background: #1a1a2e; /* Dark blue background */
+  color: white;
+  text-align: center;
+}
+
+.membership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.membership-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  font-weight: 300;
+  color: white;
+}
+
+
+.membership-section .free-text {
+  color: #a35dfd;
+  font-weight: bold;
+}
+
+h2 {
+    color: white;
+    font-weight: normal
+}
+
+.membership-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(65%) sepia(77%) saturate(6958%) hue-rotate(267deg) brightness(99%) contrast(101%); /* Makes SVG purple */
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.8;
+  color: white;
+}
+
+.register-btn {
+  background: linear-gradient(135deg, #a35dfd, #c084fc);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(163, 93, 253, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .membership-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .membership-features {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .membership-section h2 {
+    font-size: 2rem;
+  }
+}
